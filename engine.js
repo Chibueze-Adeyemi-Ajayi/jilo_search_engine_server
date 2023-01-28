@@ -56,7 +56,7 @@ const middleware_direct = (req, res, next) => {
         next();
     });
 };
-//direct to google's algor
+//direct to google's algo
 app.post('/search/direct', middleware_direct, (req, res) => {
     console.log(req.query);
     res.send(req.result);
