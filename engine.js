@@ -56,7 +56,7 @@ const middleware_direct = (req, res, next) => {
         next();
     });
 };
-//direct to google'sa
+//direct to google's
 app.post('/search/direct', middleware_direct, (req, res) => {
     console.log(req.query);
     res.send(req.result);
