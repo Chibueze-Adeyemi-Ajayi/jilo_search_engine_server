@@ -5,7 +5,7 @@ const port = process.env.PORT || 5000;
 const app = express();
 const curl = require('curl');
 
-//cors options no
+//cors options n
 var corsOptions = { origin: ['http://localhost:3000', 'https://jiloo.netlify.app'], optionsSuccessStatus: 200 }
 
 app.use(require('body-parser').urlencoded({ extended: false }));
