@@ -46,7 +46,7 @@ const middleware_direct = (req, res, next) => {
         let sep = "%2C";
         final_str += (final_str == "") ? qry__ : sep + qry__;
     });
-    // string li
+    // string lit
     let uri = `${final_str}&start=${req.query.start}`;
     console.log(uri);
     let url = 'https://serpapi.com/search.json?location=Austin,+Texas,+United+States&hl=en&gl=us&google_domain=google.com&api_key=eb6f1e6b6195c167fff043cc878debe360bd132e8ea403ea6e3028a0186b3ab0&q='+ uri;
