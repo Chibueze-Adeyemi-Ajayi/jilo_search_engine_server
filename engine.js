@@ -23,7 +23,7 @@ const middleware = (req, res, next) => {
         search += q;
     });
 
-    //serpapi communic
+    //serpapi communi
     let url = 'https://serpapi.com/search.json?q='+ qry +'&location=Austin,+Texas,+United+States&hl=en&gl=us&google_domain=google.com&api_key=eb6f1e6b6195c167fff043cc878debe360bd132e8ea403ea6e3028a0186b3ab0';
     let options = {} 
     curl.getJSON(url, options, function(err, response, body) {
